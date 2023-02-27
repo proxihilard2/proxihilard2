@@ -472,6 +472,7 @@ h4 {
 }
 .nosmagasins-box-img {
   width: 33.3333%;
+  height: 100%;
 }
 .nosmagasins-box-img img {
   width: 100%;
@@ -584,6 +585,9 @@ h4 {
     font-size: 30px;
     text-align: center;
   }
+  .button1 {
+    max-width: 100%;
+  }
   .button1 button {
     line-height: 1;
     padding: 0.9em 3em;
@@ -603,6 +607,13 @@ h4 {
   }
   .marques-box-img:nth-child(2),
   .marques-box-img:nth-child(3) {
+    display: none;
+  }
+
+  .nosmagasins-box-img button {
+    font-size: 12px;
+  }
+  .nosmagasins-box-img:nth-child(4) {
     display: none;
   }
 
