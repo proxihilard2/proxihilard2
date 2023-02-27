@@ -464,12 +464,17 @@ h4 {
   padding: 100px 0;
   min-height: 300px;
 }
+.gap {
+  gap: 10px;
+}
 .nosmagasins h2 {
   margin: 40px 0 18px;
 }
+.nosmagasins-box-img {
+  width: 33.3333%;
+}
 .nosmagasins-box-img img {
-  width: 226px;
-  height: 226px;
+  width: 100%;
   margin: 20px 10px 40px;
   display: block;
   cursor: pointer;
@@ -484,7 +489,7 @@ h4 {
   text-transform: uppercase;
   display: block;
   margin: 0 10px 40px;
-  width: 226px;
+  width: 90%;
   height: 100%;
   padding: 5px 10px;
   cursor: pointer;
@@ -551,4 +556,64 @@ h4 {
 }
 .footerbottom img:last-child {
   margin-right: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .ligne3header {
+    flex-direction: column;
+  }
+  .slider {
+    padding-left: 20px;
+  }
+  .textslide h4 {
+    font-size: 0.8rem;
+  }
+  .textslide p {
+    font-size: 0.7rem;
+  }
+  .sectioncontent:nth-child(1) {
+    flex-direction: column;
+  }
+  .title1 {
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    max-width: 100%;
+  }
+  .title1 h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .button1 button {
+    line-height: 1;
+    padding: 0.9em 3em;
+  }
+
+  .sectioncontent2 {
+    flex-direction: column;
+  }
+  .feature-box {
+    max-width: 100%;
+  }
+  .fidelite-box h2 {
+    font-size: 1.8em;
+  }
+  .view {
+    display: none;
+  }
+  .marques-box-img:nth-child(2),
+  .marques-box-img:nth-child(3) {
+    display: none;
+  }
+
+  .sectioncontentfooter {
+    flex-direction: column;
+  }
+  .footer-box {
+    margin-bottom: 25px;
+  }
+
+  .footerbottom {
+    flex-direction: column;
+  }
 }
